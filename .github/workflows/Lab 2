@@ -1,0 +1,21 @@
+public class Lab2{
+    // Questions
+    // How many elephants would it take to balance the weight of the Eiffel Tower?
+    // How many feathers would it take to weigh as much as a blue whale?
+    public static void main(String[] args){
+        //Questions 1
+        System.out.println("The amount of African Elephants it would take to equal the weight of the Eiffel Tower is "+ elephants(13000,22000000));
+        // Question 2
+        System.out.println("You Would need " + Math.round(featherwhale(0.163,250000))+ " chicken feathers to equal the weight of a blue whale");
+    }
+    public static int elephants(int AfricanEWeight,int EiffelWeight){
+        // Average weight of a Male african elephant is 13,000 pounds
+        // Weight of Eiffel tower is 22,000,000 pounds
+        return EiffelWeight/AfricanEWeight;
+    }
+    public static double featherwhale(double featherw,int whaleweight){
+        //The average weight of one chicken feather is 0.163 pounds
+        // The average weight of a blue whale is 250000 pounds
+        return whaleweight/featherw;
+    }
+}
